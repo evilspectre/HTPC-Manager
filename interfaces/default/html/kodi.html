@@ -9,9 +9,6 @@
                     <select id="servers"></select>
                 </div>
                 <div class="btn-group">
-                    <a href="#" id="kodi-notify" class="btn" title="Send notification"><i class="fa fa-envelope"></i></a>
-                </div>
-                <div class="btn-group">
                     <a href="#" class="btn dropdown-toggle" data-toggle="dropdown" title="Sort by"><i class="fa fa-unsorted"></i>
                     <i class="fa fa-caret-down"></i></a>
                     <ul class="dropdown-menu pull-right">
@@ -31,23 +28,10 @@
                         %else:
                         <li><a href="#" id="hidewatched"><i class="fa fa-eye-slash"></i> Hide Watched</a></li>
                         %endif
-                        <li><a href="ControlPlayer?action=party" class="ajax-link"><i class="fa fa-glass"></i> Party Mode</a></li>
                         <li><a href="Library/scan/video" class="ajax-link"><i class="fa fa-refresh"></i> Update Video Library</a></li>
                         <li><a href="Library/clean/video" class="ajax-link"><i class="fa fa-trash-o"></i> Clean Video Library</a></li>
                         <li><a href="Library/scan/audio" class="ajax-link"><i class="fa fa-refresh"></i> Update Music Library</a></li>
                         <li><a href="Library/clean/audio" class="ajax-link"><i class="fa fa-trash-o"></i> Clean Music Library</a></li>
-                    </ul>
-                </div>
-                <div class="btn-group">
-                    <a href="#" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-power-off"></i>
-                    <i class="fa fa-caret-down"></i></a>
-                    <ul class="dropdown-menu pull-right">
-                        <li><a href="Wake" class="ajax-link" title="Send WakeOnLan"><i class="fa fa-power-off"></i> Wake</a></li>
-                        <li><a href="Run" class="ajax-link" title="Start kodi"><i class="fa fa-play-circle-o"></i> Start</a></li>
-						<li><a href="System?action=Quit" class="ajax-confirm" title="Quit kodi"><i class="fa fa-times-circle-o"></i> Quit</a></li>
-						<li><a href="System?action=Suspend" class="ajax-confirm" title="Suspend kodi"><i class="fa fa-pause"></i> Suspend</a></li>
-                        <li><a href="System?action=Reboot" class="ajax-confirm" title="Restart kodi"><i class="fa fa-refresh"></i> Restart</a></li>
-                        <li><a href="System?action=Shutdown" class="ajax-confirm" title="Shutdown kodi"><i class="fa fa-power-off"></i> Shutdown</a></li>
                     </ul>
                 </div>
             </div>
