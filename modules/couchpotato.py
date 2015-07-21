@@ -148,12 +148,6 @@ class Couchpotato(object):
         self.logger.debug('Refreshing movie')
         return self.fetch('movie.refresh/?id=' + id)
 
-    @cherrypy.expose()
-    @require()
-    @cherrypy.tools.json_out()
-    def DeleteMovie(self, id=''):
-        self.logger.debug('Deleting movie')
-        return self.fetch('movie.delete/?id=' + id)
 
     @cherrypy.expose()
     @require()
