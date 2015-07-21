@@ -217,16 +217,6 @@ class Couchpotato(object):
 
     @cherrypy.expose()
     @cherrypy.tools.json_out()
-    def Restart(self):
-        return self.fetch('app.restart')
-
-    @cherrypy.expose()
-    @cherrypy.tools.json_out()
-    def Shutdown(self):
-        return self.fetch('app.shutdown')
-
-    @cherrypy.expose()
-    @cherrypy.tools.json_out()
     def Update(self):
         return self.fetch('updater.update')
 
