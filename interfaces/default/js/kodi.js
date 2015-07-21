@@ -254,10 +254,6 @@ function loadMovie(movie) {
         }));
     }
     var buttons = {
-        'Play' : function() {
-            playItem(movie.movieid, 'movie');
-            hideModal();
-        }
     }
     if (movie.imdbnumber) {
         $.extend(buttons,{
