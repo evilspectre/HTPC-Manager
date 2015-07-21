@@ -113,16 +113,7 @@ function editMovie(id, profile, title) {
         }
     })
 }
-function deleteMovie(id, name) {
-    $.getJSON(WEBDIR + 'couchpotato/DeleteMovie', {id: id}, function (result) {
-        if (result.success) {
-            $('#' + id).fadeOut()
-            getMovieLists();
-        } else {
-            notify('CouchPotato', 'An error occured.', 'error')
-        }
-    })
-}
+
 function refreshMovie(id, name) {
     $.getJSON(WEBDIR + 'couchpotato/RefreshMovie', {id: id}, function (result) {
         if (result.success) {
