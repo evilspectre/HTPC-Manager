@@ -132,7 +132,7 @@ class Couchpotato(object):
     @cherrypy.tools.json_out()
     def AddMovie(self, movieid, profile, title, category_id):
         self.logger.debug('Adding movie')
-        return self.fetch('movie.add/?profile_id=' + profile + '&identifier=' + movieid + '&title=' + title)
+        return self.fetch('movie.add/?profile_id=' + profile + '&identifier=' + movieid + '&title=' + title + '&force_readd=false')
 
     @cherrypy.expose()
     @require()
