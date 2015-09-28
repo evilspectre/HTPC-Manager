@@ -226,7 +226,7 @@ class Sonarr(object):
 
     @cherrypy.expose()
     @require()
-    def AddShow(self, tvdbid, quality, rootfolder='', seasonfolder='on', specials=False):
+    def AddShow(self, tvdbid, quality, rootfolder='', seasonfolder='on', specials='off'):
         d = {}
         try:
             tvshow = self.fetch('Series/lookup?term=tvdbid:%s' % tvdbid)
